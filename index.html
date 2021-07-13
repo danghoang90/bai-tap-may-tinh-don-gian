@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="calculator">
+  <table style="border: solid black 2px">
+      <tr>
+          <td colspan="4">
+              <input type="text" name="display" disabled>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <input  style="color: blue" type="button" name="one" value="1" onclick="calculator.display.value += 1"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="two" value="2" onclick="calculator.display.value += 2"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="three" value="3" onclick="calculator.display.value += 3"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="plus" value="+" onclick="calculator.display.value += '+'"></input>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <input style="color: blue" type="button" name="four" value="4" onclick="calculator.display.value += 4"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="five" value="5" onclick="calculator.display.value += 5"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="six" value="6" onclick="calculator.display.value += 6"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="sub" value="-" onclick="calculator.display.value += '-'"></input
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <input style="color: blue" type="button" name="seven" value="7" onclick="calculator.display.value += 7"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="eight" value="8" onclick="calculator.display.value += 8"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="night" value="9" onclick="calculator.display.value += 9"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="operator" value="x" onclick="calculator.display.value += 'x'"></input
+          </td>
+      </tr>
+      <tr>
+          <td>
+          <input style="color: blue" type="button"  id="clear" name="clear" value="C" onclick="calculator.display.value = ''">
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="zero" value="0" onclick="calculator.display.value += 0"></input>
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+          </td>
+          <td>
+              <input style="color: blue" type="button" name="divi" value="/" onclick="calculator.display.value += '/'">
+          </td>
+      </tr>
+  </table>
+</form>
+<script>
+
+</script>
+</body>
+</html>
